@@ -1,0 +1,52 @@
+## Project specific
+.cache
+bin/*
+*.img
+*.img.bak
+*.img.cpio
+*.img.cpio.gz
+kernel/linux/
+kernel/vmlinuz
+trash/
+
+## Generic
+# directories
+build/
+
+# objects
+*.o
+*.ko
+*.obj
+*.elf
+*.bin
+
+# shared objects
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# debug
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.data
+
+# misc
+*.cmd
+*.mod*

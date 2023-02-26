@@ -1,0 +1,6 @@
+# Device nodes to trigger on-demand module loading.
+btrfs btrfs-control c10:234
+userio userio c10:240
+dm_mod mapper/control c10:236
+uhid uhid c10:239
+rfkill rfkill c10:242

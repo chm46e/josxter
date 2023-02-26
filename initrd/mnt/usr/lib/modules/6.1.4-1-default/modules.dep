@@ -1,0 +1,454 @@
+kernel/arch/x86/kernel/msr.ko.zst:
+kernel/arch/x86/crypto/aesni-intel.ko.zst: kernel/crypto/crypto_simd.ko.zst kernel/crypto/cryptd.ko.zst
+kernel/arch/x86/crypto/sha256-ssse3.ko.zst:
+kernel/arch/x86/crypto/sha512-ssse3.ko.zst:
+kernel/arch/x86/crypto/ghash-clmulni-intel.ko.zst: kernel/crypto/cryptd.ko.zst
+kernel/arch/x86/crypto/polyval-clmulni.ko.zst: kernel/crypto/polyval-generic.ko.zst kernel/crypto/gf128mul.ko.zst
+kernel/arch/x86/crypto/crc32c-intel.ko.zst:
+kernel/arch/x86/crypto/crc32-pclmul.ko.zst:
+kernel/arch/x86/crypto/crct10dif-pclmul.ko.zst:
+kernel/fs/mbcache.ko.zst:
+kernel/fs/ext4/ext4.ko.zst: kernel/fs/mbcache.ko.zst kernel/fs/jbd2/jbd2.ko.zst
+kernel/fs/jbd2/jbd2.ko.zst:
+kernel/fs/fat/fat.ko.zst:
+kernel/fs/fat/vfat.ko.zst: kernel/fs/fat/fat.ko.zst
+kernel/fs/btrfs/btrfs.ko.zst: kernel/lib/libcrc32c.ko.zst kernel/crypto/xor.ko.zst kernel/lib/raid6/raid6_pq.ko.zst
+kernel/fs/efivarfs/efivarfs.ko.zst:
+kernel/security/keys/trusted-keys/trusted.ko.zst: kernel/lib/asn1_encoder.ko.zst kernel/drivers/tee/tee.ko.zst
+kernel/crypto/asymmetric_keys/pkcs8_key_parser.ko.zst:
+kernel/crypto/crypto_engine.ko.zst:
+kernel/crypto/echainiv.ko.zst:
+kernel/crypto/sm2_generic.ko.zst: kernel/crypto/sm3.ko.zst
+kernel/crypto/crypto_user.ko.zst:
+kernel/crypto/cmac.ko.zst:
+kernel/crypto/vmac.ko.zst:
+kernel/crypto/xcbc.ko.zst:
+kernel/crypto/md4.ko.zst:
+kernel/crypto/rmd160.ko.zst:
+kernel/crypto/sha3_generic.ko.zst:
+kernel/crypto/sm3.ko.zst:
+kernel/crypto/sm3_generic.ko.zst: kernel/crypto/sm3.ko.zst
+kernel/crypto/streebog_generic.ko.zst:
+kernel/crypto/wp512.ko.zst:
+kernel/crypto/blake2b_generic.ko.zst:
+kernel/crypto/gf128mul.ko.zst:
+kernel/crypto/ecb.ko.zst:
+kernel/crypto/cfb.ko.zst:
+kernel/crypto/pcbc.ko.zst:
+kernel/crypto/cts.ko.zst:
+kernel/crypto/lrw.ko.zst: kernel/crypto/gf128mul.ko.zst
+kernel/crypto/xts.ko.zst:
+kernel/crypto/xctr.ko.zst:
+kernel/crypto/hctr2.ko.zst:
+kernel/crypto/keywrap.ko.zst:
+kernel/crypto/adiantum.ko.zst: kernel/lib/crypto/libpoly1305.ko.zst
+kernel/crypto/nhpoly1305.ko.zst: kernel/lib/crypto/libpoly1305.ko.zst
+kernel/crypto/gcm.ko.zst:
+kernel/crypto/ccm.ko.zst:
+kernel/crypto/chacha20poly1305.ko.zst:
+kernel/crypto/aegis128.ko.zst:
+kernel/crypto/pcrypt.ko.zst:
+kernel/crypto/cryptd.ko.zst:
+kernel/crypto/des_generic.ko.zst: kernel/lib/crypto/libdes.ko.zst
+kernel/crypto/fcrypt.ko.zst:
+kernel/crypto/blowfish_generic.ko.zst: kernel/crypto/blowfish_common.ko.zst
+kernel/crypto/blowfish_common.ko.zst:
+kernel/crypto/twofish_generic.ko.zst: kernel/crypto/twofish_common.ko.zst
+kernel/crypto/twofish_common.ko.zst:
+kernel/crypto/serpent_generic.ko.zst:
+kernel/crypto/sm4.ko.zst:
+kernel/crypto/sm4_generic.ko.zst: kernel/crypto/sm4.ko.zst
+kernel/crypto/aes_ti.ko.zst:
+kernel/crypto/camellia_generic.ko.zst:
+kernel/crypto/cast_common.ko.zst:
+kernel/crypto/cast5_generic.ko.zst: kernel/crypto/cast_common.ko.zst
+kernel/crypto/cast6_generic.ko.zst: kernel/crypto/cast_common.ko.zst
+kernel/crypto/aria_generic.ko.zst:
+kernel/crypto/chacha_generic.ko.zst: kernel/lib/crypto/libchacha.ko.zst
+kernel/crypto/poly1305_generic.ko.zst: kernel/lib/crypto/libpoly1305.ko.zst
+kernel/crypto/deflate.ko.zst:
+kernel/crypto/michael_mic.ko.zst:
+kernel/crypto/crc32_generic.ko.zst:
+kernel/crypto/authenc.ko.zst:
+kernel/crypto/authencesn.ko.zst: kernel/crypto/authenc.ko.zst
+kernel/crypto/lz4.ko.zst: kernel/lib/lz4/lz4_compress.ko.zst
+kernel/crypto/lz4hc.ko.zst: kernel/lib/lz4/lz4hc_compress.ko.zst
+kernel/crypto/xxhash_generic.ko.zst:
+kernel/crypto/842.ko.zst: kernel/lib/842/842_decompress.ko.zst kernel/lib/842/842_compress.ko.zst
+kernel/crypto/ansi_cprng.ko.zst:
+kernel/crypto/tcrypt.ko.zst:
+kernel/crypto/ghash-generic.ko.zst: kernel/crypto/gf128mul.ko.zst
+kernel/crypto/polyval-generic.ko.zst: kernel/crypto/gf128mul.ko.zst
+kernel/crypto/af_alg.ko.zst:
+kernel/crypto/algif_hash.ko.zst: kernel/crypto/af_alg.ko.zst
+kernel/crypto/algif_skcipher.ko.zst: kernel/crypto/af_alg.ko.zst
+kernel/crypto/algif_rng.ko.zst: kernel/crypto/af_alg.ko.zst
+kernel/crypto/algif_aead.ko.zst: kernel/crypto/af_alg.ko.zst
+kernel/crypto/ofb.ko.zst:
+kernel/crypto/essiv.ko.zst: kernel/crypto/authenc.ko.zst
+kernel/crypto/curve25519-generic.ko.zst: kernel/lib/crypto/libcurve25519-generic.ko.zst
+kernel/crypto/ecdh_generic.ko.zst:
+kernel/crypto/ecrdsa_generic.ko.zst:
+kernel/crypto/xor.ko.zst:
+kernel/crypto/async_tx/async_tx.ko.zst:
+kernel/crypto/async_tx/async_memcpy.ko.zst: kernel/crypto/async_tx/async_tx.ko.zst
+kernel/crypto/async_tx/async_xor.ko.zst: kernel/crypto/async_tx/async_tx.ko.zst kernel/crypto/xor.ko.zst
+kernel/crypto/async_tx/async_pq.ko.zst: kernel/crypto/async_tx/async_xor.ko.zst kernel/crypto/async_tx/async_tx.ko.zst kernel/crypto/xor.ko.zst kernel/lib/raid6/raid6_pq.ko.zst
+kernel/crypto/async_tx/async_raid6_recov.ko.zst: kernel/crypto/async_tx/async_memcpy.ko.zst kernel/crypto/async_tx/async_pq.ko.zst kernel/crypto/async_tx/async_xor.ko.zst kernel/crypto/async_tx/async_tx.ko.zst kernel/crypto/xor.ko.zst kernel/lib/raid6/raid6_pq.ko.zst
+kernel/crypto/async_tx/raid6test.ko.zst: kernel/crypto/async_tx/async_raid6_recov.ko.zst kernel/crypto/async_tx/async_memcpy.ko.zst kernel/crypto/async_tx/async_pq.ko.zst kernel/crypto/async_tx/async_xor.ko.zst kernel/crypto/async_tx/async_tx.ko.zst kernel/crypto/xor.ko.zst kernel/lib/raid6/raid6_pq.ko.zst
+kernel/crypto/crypto_simd.ko.zst: kernel/crypto/cryptd.ko.zst
+kernel/lib/crypto/libchacha.ko.zst:
+kernel/lib/crypto/libcurve25519-generic.ko.zst:
+kernel/lib/crypto/libdes.ko.zst:
+kernel/lib/crypto/libpoly1305.ko.zst:
+kernel/lib/lz4/lz4_compress.ko.zst:
+kernel/lib/lz4/lz4hc_compress.ko.zst:
+kernel/lib/libcrc32c.ko.zst:
+kernel/lib/crc8.ko.zst:
+kernel/lib/842/842_compress.ko.zst:
+kernel/lib/842/842_decompress.ko.zst:
+kernel/lib/raid6/raid6_pq.ko.zst:
+kernel/lib/asn1_encoder.ko.zst:
+kernel/drivers/pinctrl/cirrus/pinctrl-madera.ko.zst:
+kernel/drivers/pinctrl/intel/pinctrl-lynxpoint.ko.zst:
+kernel/drivers/pinctrl/intel/pinctrl-alderlake.ko.zst:
+kernel/drivers/pinctrl/intel/pinctrl-broxton.ko.zst:
+kernel/drivers/pinctrl/intel/pinctrl-cannonlake.ko.zst:
+kernel/drivers/pinctrl/intel/pinctrl-cedarfork.ko.zst:
+kernel/drivers/pinctrl/intel/pinctrl-denverton.ko.zst:
+kernel/drivers/pinctrl/intel/pinctrl-elkhartlake.ko.zst:
+kernel/drivers/pinctrl/intel/pinctrl-emmitsburg.ko.zst:
+kernel/drivers/pinctrl/intel/pinctrl-geminilake.ko.zst:
+kernel/drivers/pinctrl/intel/pinctrl-icelake.ko.zst:
+kernel/drivers/pinctrl/intel/pinctrl-jasperlake.ko.zst:
+kernel/drivers/pinctrl/intel/pinctrl-lakefield.ko.zst:
+kernel/drivers/pinctrl/intel/pinctrl-lewisburg.ko.zst:
+kernel/drivers/pinctrl/intel/pinctrl-meteorlake.ko.zst:
+kernel/drivers/pinctrl/intel/pinctrl-sunrisepoint.ko.zst:
+kernel/drivers/pinctrl/intel/pinctrl-tigerlake.ko.zst:
+kernel/drivers/pinctrl/pinctrl-cy8c95x0.ko.zst:
+kernel/drivers/pinctrl/pinctrl-da9062.ko.zst:
+kernel/drivers/pci/controller/pci-hyperv.ko.zst: kernel/drivers/pci/controller/pci-hyperv-intf.ko.zst kernel/drivers/hv/hv_vmbus.ko.zst
+kernel/drivers/pci/controller/pci-hyperv-intf.ko.zst:
+kernel/drivers/pci/controller/vmd.ko.zst:
+kernel/drivers/video/backlight/lcd.ko.zst:
+kernel/drivers/acpi/video.ko.zst: kernel/drivers/platform/x86/wmi.ko.zst
+kernel/drivers/acpi/platform_profile.ko.zst:
+kernel/drivers/acpi/battery.ko.zst:
+kernel/drivers/tty/serial/8250/serial_cs.ko.zst: kernel/drivers/pcmcia/pcmcia.ko.zst kernel/drivers/pcmcia/pcmcia_core.ko.zst
+kernel/drivers/tty/serial/sc16is7xx.ko.zst: kernel/drivers/base/regmap/regmap-spi.ko.zst
+kernel/drivers/tty/serial/jsm/jsm.ko.zst:
+kernel/drivers/tty/serial/altera_uart.ko.zst:
+kernel/drivers/tty/serial/altera_jtaguart.ko.zst:
+kernel/drivers/tty/serial/lantiq.ko.zst:
+kernel/drivers/tty/serial/rp2.ko.zst:
+kernel/drivers/tty/serial/fsl_lpuart.ko.zst:
+kernel/drivers/tty/serial/fsl_linflexuart.ko.zst:
+kernel/drivers/tty/serial/sprd_serial.ko.zst:
+kernel/drivers/iommu/amd/iommu_v2.ko.zst:
+kernel/drivers/gpu/drm/display/drm_display_helper.ko.zst: kernel/drivers/media/cec/core/cec.ko.zst kernel/drivers/media/rc/rc-core.ko.zst
+kernel/drivers/gpu/drm/drm_buddy.ko.zst:
+kernel/drivers/gpu/drm/drm_ttm_helper.ko.zst: kernel/drivers/gpu/drm/ttm/ttm.ko.zst
+kernel/drivers/gpu/drm/ttm/ttm.ko.zst:
+kernel/drivers/gpu/drm/scheduler/gpu-sched.ko.zst:
+kernel/drivers/gpu/drm/amd/amdgpu/amdgpu.ko.zst: kernel/drivers/gpu/drm/drm_ttm_helper.ko.zst kernel/drivers/gpu/drm/ttm/ttm.ko.zst kernel/drivers/acpi/video.ko.zst kernel/drivers/platform/x86/wmi.ko.zst kernel/drivers/iommu/amd/iommu_v2.ko.zst kernel/drivers/gpu/drm/scheduler/gpu-sched.ko.zst kernel/drivers/gpu/drm/drm_buddy.ko.zst kernel/drivers/gpu/drm/display/drm_display_helper.ko.zst kernel/drivers/media/cec/core/cec.ko.zst kernel/drivers/media/rc/rc-core.ko.zst
+kernel/drivers/base/regmap/regmap-spi.ko.zst:
+kernel/drivers/misc/mei/mei.ko.zst:
+kernel/drivers/mfd/kempld-core.ko.zst:
+kernel/drivers/mfd/intel_pmc_bxt.ko.zst:
+kernel/drivers/mfd/iqs62x.ko.zst:
+kernel/drivers/scsi/device_handler/scsi_dh_rdac.ko.zst:
+kernel/drivers/scsi/device_handler/scsi_dh_emc.ko.zst:
+kernel/drivers/scsi/device_handler/scsi_dh_alua.ko.zst:
+kernel/drivers/scsi/sr_mod.ko.zst: kernel/drivers/cdrom/cdrom.ko.zst
+kernel/drivers/scsi/sg.ko.zst:
+kernel/drivers/nvme/host/nvme-core.ko.zst:
+kernel/drivers/nvme/host/nvme.ko.zst: kernel/drivers/nvme/host/nvme-core.ko.zst
+kernel/drivers/ata/ata_piix.ko.zst:
+kernel/drivers/cdrom/cdrom.ko.zst:
+kernel/drivers/usb/host/ehci-hcd.ko.zst: kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/usb/host/ehci-pci.ko.zst: kernel/drivers/usb/host/ehci-hcd.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/usb/host/ehci-platform.ko.zst: kernel/drivers/usb/host/ehci-hcd.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/usb/host/ohci-hcd.ko.zst: kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/usb/host/ohci-pci.ko.zst: kernel/drivers/usb/host/ohci-hcd.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/usb/host/uhci-hcd.ko.zst: kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/usb/host/xhci-hcd.ko.zst: kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/usb/host/xhci-pci.ko.zst: kernel/drivers/usb/host/xhci-pci-renesas.ko.zst kernel/drivers/usb/host/xhci-hcd.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/usb/host/xhci-pci-renesas.ko.zst:
+kernel/drivers/usb/host/xhci-plat-hcd.ko.zst: kernel/drivers/usb/host/xhci-hcd.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/usb/core/usbcore.ko.zst:
+kernel/drivers/usb/typec/typec.ko.zst:
+kernel/drivers/usb/typec/altmodes/typec_displayport.ko.zst: kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/altmodes/typec_nvidia.ko.zst: kernel/drivers/usb/typec/altmodes/typec_displayport.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/tcpm/tcpm.ko.zst: kernel/drivers/usb/roles/roles.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/tcpm/fusb302.ko.zst: kernel/drivers/usb/typec/tcpm/tcpm.ko.zst kernel/drivers/usb/roles/roles.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/tcpm/typec_wcove.ko.zst: kernel/drivers/usb/typec/tcpm/tcpm.ko.zst kernel/drivers/usb/roles/roles.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/tcpm/tcpci.ko.zst: kernel/drivers/usb/typec/tcpm/tcpm.ko.zst kernel/drivers/usb/roles/roles.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/tcpm/tcpci_rt1711h.ko.zst: kernel/drivers/usb/typec/tcpm/tcpci.ko.zst kernel/drivers/usb/typec/tcpm/tcpm.ko.zst kernel/drivers/usb/roles/roles.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/tcpm/tcpci_maxim.ko.zst: kernel/drivers/usb/typec/tcpm/tcpci.ko.zst kernel/drivers/usb/typec/tcpm/tcpm.ko.zst kernel/drivers/usb/roles/roles.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/ucsi/typec_ucsi.ko.zst: kernel/drivers/usb/roles/roles.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/ucsi/ucsi_acpi.ko.zst: kernel/drivers/usb/typec/ucsi/typec_ucsi.ko.zst kernel/drivers/usb/roles/roles.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/ucsi/ucsi_ccg.ko.zst: kernel/drivers/usb/typec/ucsi/typec_ucsi.ko.zst kernel/drivers/usb/roles/roles.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/ucsi/ucsi_stm32g0.ko.zst: kernel/drivers/usb/typec/ucsi/typec_ucsi.ko.zst kernel/drivers/usb/roles/roles.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/tipd/tps6598x.ko.zst: kernel/drivers/usb/roles/roles.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/anx7411.ko.zst: kernel/drivers/usb/roles/roles.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/hd3ss3220.ko.zst: kernel/drivers/usb/roles/roles.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/stusb160x.ko.zst: kernel/drivers/usb/roles/roles.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/rt1719.ko.zst: kernel/drivers/usb/roles/roles.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/wusb3801.ko.zst: kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/mux/fsa4480.ko.zst: kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/mux/pi3usb30532.ko.zst: kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/typec/mux/intel_pmc_mux.ko.zst: kernel/drivers/usb/roles/roles.ko.zst kernel/drivers/usb/typec/typec.ko.zst
+kernel/drivers/usb/roles/roles.ko.zst:
+kernel/drivers/input/serio/parkbd.ko.zst: kernel/drivers/parport/parport.ko.zst
+kernel/drivers/input/serio/serport.ko.zst:
+kernel/drivers/input/serio/ct82c710.ko.zst:
+kernel/drivers/input/serio/pcips2.ko.zst:
+kernel/drivers/input/serio/ps2mult.ko.zst:
+kernel/drivers/input/serio/serio_raw.ko.zst:
+kernel/drivers/input/serio/altera_ps2.ko.zst:
+kernel/drivers/input/serio/hyperv-keyboard.ko.zst: kernel/drivers/hv/hv_vmbus.ko.zst
+kernel/drivers/input/serio/ps2-gpio.ko.zst:
+kernel/drivers/input/serio/userio.ko.zst:
+kernel/drivers/input/keyboard/adp5588-keys.ko.zst: kernel/drivers/input/matrix-keymap.ko.zst
+kernel/drivers/input/keyboard/adp5589-keys.ko.zst:
+kernel/drivers/input/keyboard/applespi.ko.zst:
+kernel/drivers/input/keyboard/cros_ec_keyb.ko.zst: kernel/drivers/input/matrix-keymap.ko.zst
+kernel/drivers/input/keyboard/cypress-sf.ko.zst:
+kernel/drivers/input/keyboard/gpio_keys.ko.zst:
+kernel/drivers/input/keyboard/gpio_keys_polled.ko.zst:
+kernel/drivers/input/keyboard/tca6416-keypad.ko.zst:
+kernel/drivers/input/keyboard/tca8418_keypad.ko.zst: kernel/drivers/input/matrix-keymap.ko.zst
+kernel/drivers/input/keyboard/iqs62x-keys.ko.zst: kernel/drivers/mfd/iqs62x.ko.zst
+kernel/drivers/input/keyboard/lm8323.ko.zst:
+kernel/drivers/input/keyboard/lm8333.ko.zst: kernel/drivers/input/matrix-keymap.ko.zst
+kernel/drivers/input/keyboard/matrix_keypad.ko.zst: kernel/drivers/input/matrix-keymap.ko.zst
+kernel/drivers/input/keyboard/max7359_keypad.ko.zst: kernel/drivers/input/matrix-keymap.ko.zst
+kernel/drivers/input/keyboard/mcs_touchkey.ko.zst:
+kernel/drivers/input/keyboard/mpr121_touchkey.ko.zst:
+kernel/drivers/input/keyboard/newtonkbd.ko.zst:
+kernel/drivers/input/keyboard/opencores-kbd.ko.zst:
+kernel/drivers/input/keyboard/pinephone-keyboard.ko.zst: kernel/lib/crc8.ko.zst kernel/drivers/input/matrix-keymap.ko.zst
+kernel/drivers/input/keyboard/qt1050.ko.zst:
+kernel/drivers/input/keyboard/qt1070.ko.zst:
+kernel/drivers/input/keyboard/qt2160.ko.zst:
+kernel/drivers/input/keyboard/sunkbd.ko.zst:
+kernel/drivers/input/keyboard/xtkbd.ko.zst:
+kernel/drivers/input/ff-memless.ko.zst:
+kernel/drivers/input/sparse-keymap.ko.zst:
+kernel/drivers/input/matrix-keymap.ko.zst:
+kernel/drivers/input/rmi4/rmi_core.ko.zst: kernel/drivers/media/common/videobuf2/videobuf2-vmalloc.ko.zst kernel/drivers/media/common/videobuf2/videobuf2-memops.ko.zst kernel/drivers/media/common/videobuf2/videobuf2-v4l2.ko.zst kernel/drivers/media/common/videobuf2/videobuf2-common.ko.zst kernel/drivers/media/v4l2-core/videodev.ko.zst kernel/drivers/media/mc/mc.ko.zst
+kernel/drivers/media/rc/rc-core.ko.zst:
+kernel/drivers/media/common/videobuf2/videobuf2-common.ko.zst: kernel/drivers/media/v4l2-core/videodev.ko.zst kernel/drivers/media/mc/mc.ko.zst
+kernel/drivers/media/common/videobuf2/videobuf2-memops.ko.zst: kernel/drivers/media/common/videobuf2/videobuf2-common.ko.zst kernel/drivers/media/v4l2-core/videodev.ko.zst kernel/drivers/media/mc/mc.ko.zst
+kernel/drivers/media/common/videobuf2/videobuf2-v4l2.ko.zst: kernel/drivers/media/common/videobuf2/videobuf2-common.ko.zst kernel/drivers/media/v4l2-core/videodev.ko.zst kernel/drivers/media/mc/mc.ko.zst
+kernel/drivers/media/common/videobuf2/videobuf2-vmalloc.ko.zst: kernel/drivers/media/common/videobuf2/videobuf2-memops.ko.zst kernel/drivers/media/common/videobuf2/videobuf2-common.ko.zst kernel/drivers/media/v4l2-core/videodev.ko.zst kernel/drivers/media/mc/mc.ko.zst
+kernel/drivers/media/mc/mc.ko.zst:
+kernel/drivers/media/v4l2-core/videodev.ko.zst: kernel/drivers/media/mc/mc.ko.zst
+kernel/drivers/media/cec/core/cec.ko.zst: kernel/drivers/media/rc/rc-core.ko.zst
+kernel/drivers/watchdog/pretimeout_panic.ko.zst:
+kernel/drivers/watchdog/pcwd_pci.ko.zst:
+kernel/drivers/watchdog/wdt_pci.ko.zst:
+kernel/drivers/watchdog/pcwd_usb.ko.zst: kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/watchdog/acquirewdt.ko.zst:
+kernel/drivers/watchdog/advantechwdt.ko.zst:
+kernel/drivers/watchdog/alim1535_wdt.ko.zst:
+kernel/drivers/watchdog/alim7101_wdt.ko.zst:
+kernel/drivers/watchdog/ebc-c384_wdt.ko.zst:
+kernel/drivers/watchdog/exar_wdt.ko.zst:
+kernel/drivers/watchdog/f71808e_wdt.ko.zst:
+kernel/drivers/watchdog/sp5100_tco.ko.zst:
+kernel/drivers/watchdog/sbc_fitpc2_wdt.ko.zst:
+kernel/drivers/watchdog/eurotechwdt.ko.zst:
+kernel/drivers/watchdog/ib700wdt.ko.zst:
+kernel/drivers/watchdog/ibmasr.ko.zst:
+kernel/drivers/watchdog/wafer5823wdt.ko.zst:
+kernel/drivers/watchdog/i6300esb.ko.zst:
+kernel/drivers/watchdog/iTCO_wdt.ko.zst: kernel/drivers/mfd/intel_pmc_bxt.ko.zst kernel/drivers/watchdog/iTCO_vendor_support.ko.zst
+kernel/drivers/watchdog/iTCO_vendor_support.ko.zst:
+kernel/drivers/watchdog/it8712f_wdt.ko.zst:
+kernel/drivers/watchdog/it87_wdt.ko.zst:
+kernel/drivers/watchdog/hpwdt.ko.zst:
+kernel/drivers/watchdog/kempld_wdt.ko.zst: kernel/drivers/mfd/kempld-core.ko.zst
+kernel/drivers/watchdog/sc1200wdt.ko.zst:
+kernel/drivers/watchdog/pc87413_wdt.ko.zst:
+kernel/drivers/watchdog/nv_tco.ko.zst:
+kernel/drivers/watchdog/sbc60xxwdt.ko.zst:
+kernel/drivers/watchdog/cpu5wdt.ko.zst:
+kernel/drivers/watchdog/sch311x_wdt.ko.zst:
+kernel/drivers/watchdog/smsc37b787_wdt.ko.zst:
+kernel/drivers/watchdog/tqmx86_wdt.ko.zst:
+kernel/drivers/watchdog/via_wdt.ko.zst:
+kernel/drivers/watchdog/w83627hf_wdt.ko.zst:
+kernel/drivers/watchdog/w83877f_wdt.ko.zst:
+kernel/drivers/watchdog/w83977f_wdt.ko.zst:
+kernel/drivers/watchdog/machzwd.ko.zst:
+kernel/drivers/watchdog/sbc_epx_c3.ko.zst:
+kernel/drivers/watchdog/mei_wdt.ko.zst: kernel/drivers/misc/mei/mei.ko.zst
+kernel/drivers/watchdog/ni903x_wdt.ko.zst:
+kernel/drivers/watchdog/nic7018_wdt.ko.zst:
+kernel/drivers/watchdog/mlx_wdt.ko.zst:
+kernel/drivers/watchdog/simatic-ipc-wdt.ko.zst:
+kernel/drivers/watchdog/mena21_wdt.ko.zst:
+kernel/drivers/watchdog/xen_wdt.ko.zst:
+kernel/drivers/watchdog/da9062_wdt.ko.zst:
+kernel/drivers/watchdog/wdat_wdt.ko.zst:
+kernel/drivers/watchdog/ziirave_wdt.ko.zst:
+kernel/drivers/watchdog/softdog.ko.zst:
+kernel/drivers/md/dm-mod.ko.zst:
+kernel/drivers/md/dm-crypt.ko.zst: kernel/security/keys/trusted-keys/trusted.ko.zst kernel/lib/asn1_encoder.ko.zst kernel/drivers/tee/tee.ko.zst kernel/drivers/md/dm-mod.ko.zst
+kernel/drivers/md/dm-multipath.ko.zst: kernel/drivers/md/dm-mod.ko.zst
+kernel/drivers/leds/trigger/ledtrig-audio.ko.zst:
+kernel/drivers/leds/led-class-multicolor.ko.zst:
+kernel/drivers/crypto/ccp/ccp.ko.zst:
+kernel/drivers/crypto/padlock-aes.ko.zst:
+kernel/drivers/hid/uhid.ko.zst:
+kernel/drivers/hid/hid-generic.ko.zst:
+kernel/drivers/hid/hid-a4tech.ko.zst:
+kernel/drivers/hid/hid-accutouch.ko.zst:
+kernel/drivers/hid/hid-alps.ko.zst:
+kernel/drivers/hid/hid-axff.ko.zst: kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-apple.ko.zst:
+kernel/drivers/hid/hid-appleir.ko.zst:
+kernel/drivers/hid/hid-creative-sb0540.ko.zst:
+kernel/drivers/hid/hid-asus.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/platform/x86/asus-wmi.ko.zst kernel/drivers/acpi/battery.ko.zst kernel/drivers/leds/trigger/ledtrig-audio.ko.zst kernel/drivers/input/sparse-keymap.ko.zst kernel/drivers/acpi/platform_profile.ko.zst kernel/net/rfkill/rfkill.ko.zst kernel/drivers/usb/core/usbcore.ko.zst kernel/drivers/acpi/video.ko.zst kernel/drivers/platform/x86/wmi.ko.zst
+kernel/drivers/hid/hid-aureal.ko.zst:
+kernel/drivers/hid/hid-belkin.ko.zst:
+kernel/drivers/hid/hid-betopff.ko.zst: kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-bigbenff.ko.zst: kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-cherry.ko.zst:
+kernel/drivers/hid/hid-chicony.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-cmedia.ko.zst:
+kernel/drivers/hid/hid-corsair.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-cougar.ko.zst:
+kernel/drivers/hid/hid-cp2112.ko.zst:
+kernel/drivers/hid/hid-cypress.ko.zst:
+kernel/drivers/hid/hid-dr.ko.zst: kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-emsff.ko.zst: kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-elan.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-elecom.ko.zst:
+kernel/drivers/hid/hid-elo.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-ezkey.ko.zst:
+kernel/drivers/hid/hid-ft260.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-gembird.ko.zst:
+kernel/drivers/hid/hid-gfrm.ko.zst:
+kernel/drivers/hid/hid-glorious.ko.zst:
+kernel/drivers/hid/hid-vivaldi-common.ko.zst:
+kernel/drivers/hid/hid-google-hammer.ko.zst: kernel/drivers/hid/hid-vivaldi-common.ko.zst
+kernel/drivers/hid/hid-vivaldi.ko.zst: kernel/drivers/hid/hid-vivaldi-common.ko.zst
+kernel/drivers/hid/hid-gt683r.ko.zst:
+kernel/drivers/hid/hid-gyration.ko.zst:
+kernel/drivers/hid/hid-holtek-kbd.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-holtek-mouse.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-holtekff.ko.zst: kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-hyperv.ko.zst: kernel/drivers/hv/hv_vmbus.ko.zst
+kernel/drivers/hid/hid-icade.ko.zst:
+kernel/drivers/hid/hid-ite.ko.zst:
+kernel/drivers/hid/hid-jabra.ko.zst:
+kernel/drivers/hid/hid-kensington.ko.zst:
+kernel/drivers/hid/hid-keytouch.ko.zst:
+kernel/drivers/hid/hid-kye.ko.zst:
+kernel/drivers/hid/hid-lcpower.ko.zst:
+kernel/drivers/hid/hid-lenovo.ko.zst:
+kernel/drivers/hid/hid-letsketch.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-logitech.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/input/ff-memless.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-lg-g15.ko.zst:
+kernel/drivers/hid/hid-logitech-dj.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-logitech-hidpp.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-macally.ko.zst:
+kernel/drivers/hid/hid-magicmouse.ko.zst:
+kernel/drivers/hid/hid-maltron.ko.zst:
+kernel/drivers/hid/hid-mcp2221.ko.zst:
+kernel/drivers/hid/hid-mf.ko.zst: kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-megaworld.ko.zst: kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-microsoft.ko.zst: kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-monterey.ko.zst:
+kernel/drivers/hid/hid-multitouch.ko.zst:
+kernel/drivers/hid/hid-nintendo.ko.zst: kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-nti.ko.zst:
+kernel/drivers/hid/hid-ntrig.ko.zst: kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-ortek.ko.zst:
+kernel/drivers/hid/hid-prodikeys.ko.zst: kernel/sound/core/snd-rawmidi.ko.zst kernel/sound/core/snd-seq-device.ko.zst kernel/sound/core/snd.ko.zst kernel/sound/soundcore.ko.zst kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-pl.ko.zst: kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-penmount.ko.zst:
+kernel/drivers/hid/hid-petalynx.ko.zst:
+kernel/drivers/hid/hid-picolcd.ko.zst: kernel/drivers/video/backlight/lcd.ko.zst kernel/drivers/media/rc/rc-core.ko.zst
+kernel/drivers/hid/hid-plantronics.ko.zst:
+kernel/drivers/hid/hid-playstation.ko.zst: kernel/drivers/leds/led-class-multicolor.ko.zst kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-primax.ko.zst:
+kernel/drivers/hid/hid-pxrc.ko.zst:
+kernel/drivers/hid/hid-razer.ko.zst:
+kernel/drivers/hid/hid-redragon.ko.zst:
+kernel/drivers/hid/hid-retrode.ko.zst:
+kernel/drivers/hid/hid-roccat.ko.zst:
+kernel/drivers/hid/hid-roccat-common.ko.zst: kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-roccat-arvo.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/hid-roccat-common.ko.zst kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-roccat-isku.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/hid-roccat-common.ko.zst kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-roccat-kone.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-roccat-koneplus.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/hid-roccat-common.ko.zst kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-roccat-konepure.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/hid-roccat-common.ko.zst kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-roccat-kovaplus.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/hid-roccat-common.ko.zst kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-roccat-lua.ko.zst: kernel/drivers/hid/hid-roccat-common.ko.zst kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-roccat-pyra.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/hid-roccat-common.ko.zst kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-roccat-ryos.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/hid-roccat-common.ko.zst kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-roccat-savu.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/hid-roccat-common.ko.zst kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-rmi.ko.zst: kernel/drivers/input/rmi4/rmi_core.ko.zst kernel/drivers/media/common/videobuf2/videobuf2-vmalloc.ko.zst kernel/drivers/media/common/videobuf2/videobuf2-memops.ko.zst kernel/drivers/media/common/videobuf2/videobuf2-v4l2.ko.zst kernel/drivers/media/common/videobuf2/videobuf2-common.ko.zst kernel/drivers/media/v4l2-core/videodev.ko.zst kernel/drivers/media/mc/mc.ko.zst
+kernel/drivers/hid/hid-saitek.ko.zst:
+kernel/drivers/hid/hid-samsung.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-semitek.ko.zst:
+kernel/drivers/hid/hid-sigmamicro.ko.zst:
+kernel/drivers/hid/hid-sjoy.ko.zst: kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-sony.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/input/ff-memless.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-speedlink.ko.zst:
+kernel/drivers/hid/hid-steam.ko.zst:
+kernel/drivers/hid/hid-steelseries.ko.zst:
+kernel/drivers/hid/hid-sunplus.ko.zst:
+kernel/drivers/hid/hid-gaff.ko.zst: kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-tmff.ko.zst: kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-thrustmaster.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-tivo.ko.zst:
+kernel/drivers/hid/hid-topseed.ko.zst:
+kernel/drivers/hid/hid-topre.ko.zst:
+kernel/drivers/hid/hid-twinhan.ko.zst:
+kernel/drivers/hid/hid-u2fzero.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-uclogic.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-udraw-ps3.ko.zst:
+kernel/drivers/hid/hid-led.ko.zst:
+kernel/drivers/hid/hid-xiaomi.ko.zst:
+kernel/drivers/hid/hid-xinmo.ko.zst:
+kernel/drivers/hid/hid-zpff.ko.zst: kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-zydacron.ko.zst:
+kernel/drivers/hid/hid-viewsonic.ko.zst:
+kernel/drivers/hid/hid-vrc2.ko.zst:
+kernel/drivers/hid/wacom.ko.zst: kernel/drivers/hid/usbhid/usbhid.ko.zst kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/hid-waltop.ko.zst:
+kernel/drivers/hid/hid-wiimote.ko.zst: kernel/drivers/input/ff-memless.ko.zst
+kernel/drivers/hid/hid-sensor-hub.ko.zst:
+kernel/drivers/hid/hid-sensor-custom.ko.zst: kernel/drivers/hid/hid-sensor-hub.ko.zst
+kernel/drivers/hid/usbhid/usbhid.ko.zst: kernel/drivers/usb/core/usbcore.ko.zst
+kernel/drivers/hid/i2c-hid/i2c-hid.ko.zst:
+kernel/drivers/hid/i2c-hid/i2c-hid-acpi.ko.zst: kernel/drivers/hid/i2c-hid/i2c-hid.ko.zst
+kernel/drivers/hid/intel-ish-hid/intel-ishtp.ko.zst:
+kernel/drivers/hid/intel-ish-hid/intel-ish-ipc.ko.zst: kernel/drivers/hid/intel-ish-hid/intel-ishtp.ko.zst
+kernel/drivers/hid/intel-ish-hid/intel-ishtp-hid.ko.zst: kernel/drivers/hid/intel-ish-hid/intel-ishtp.ko.zst
+kernel/drivers/hid/intel-ish-hid/intel-ishtp-loader.ko.zst: kernel/drivers/hid/intel-ish-hid/intel-ishtp.ko.zst
+kernel/drivers/hid/amd-sfh-hid/amd_sfh.ko.zst:
+kernel/drivers/hid/surface-hid/surface_hid_core.ko.zst: kernel/drivers/platform/surface/aggregator/surface_aggregator.ko.zst
+kernel/drivers/hid/surface-hid/surface_hid.ko.zst: kernel/drivers/hid/surface-hid/surface_hid_core.ko.zst kernel/drivers/platform/surface/aggregator/surface_aggregator.ko.zst
+kernel/drivers/hid/surface-hid/surface_kbd.ko.zst: kernel/drivers/hid/surface-hid/surface_hid_core.ko.zst kernel/drivers/platform/surface/aggregator/surface_aggregator.ko.zst
+kernel/drivers/platform/x86/wmi.ko.zst:
+kernel/drivers/platform/x86/asus-wmi.ko.zst: kernel/drivers/acpi/battery.ko.zst kernel/drivers/leds/trigger/ledtrig-audio.ko.zst kernel/drivers/input/sparse-keymap.ko.zst kernel/drivers/acpi/platform_profile.ko.zst kernel/net/rfkill/rfkill.ko.zst kernel/drivers/acpi/video.ko.zst kernel/drivers/platform/x86/wmi.ko.zst
+kernel/drivers/platform/surface/aggregator/surface_aggregator.ko.zst:
+kernel/drivers/hv/hv_vmbus.ko.zst:
+kernel/drivers/parport/parport.ko.zst:
+kernel/drivers/pcmcia/pcmcia_core.ko.zst:
+kernel/drivers/pcmcia/pcmcia.ko.zst: kernel/drivers/pcmcia/pcmcia_core.ko.zst
+kernel/drivers/tee/tee.ko.zst:
+kernel/sound/soundcore.ko.zst:
+kernel/sound/core/snd.ko.zst: kernel/sound/soundcore.ko.zst
+kernel/sound/core/snd-seq-device.ko.zst: kernel/sound/core/snd.ko.zst kernel/sound/soundcore.ko.zst
+kernel/sound/core/snd-rawmidi.ko.zst: kernel/sound/core/snd-seq-device.ko.zst kernel/sound/core/snd.ko.zst kernel/sound/soundcore.ko.zst
+kernel/net/wireless/cfg80211.ko.zst: kernel/net/rfkill/rfkill.ko.zst
+kernel/net/rfkill/rfkill.ko.zst:
+updates/wl.ko.xz: kernel/net/wireless/cfg80211.ko.zst kernel/net/rfkill/rfkill.ko.zst
+updates/r8152.ko.xz: kernel/drivers/usb/core/usbcore.ko.zst
