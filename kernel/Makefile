@@ -8,7 +8,7 @@ kernel/vmlinuz: $(LINUX_BZIMAGE)
 	@if [ !$(SUPPRESS_ECHO) ]; then\
 		echo "[UP] $@";\
 	fi
-	#TODO: Check for missing bzImage
+	@#TODO: Check for missing bzImage
 	$(CQ)cp -f $(LINUX_BZIMAGE) $(LC_KERNEL)/vmlinuz
 
 kernel_clean:

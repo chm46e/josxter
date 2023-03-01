@@ -1,10 +1,5 @@
-.globl _start
-.text
-_start:
-    call main
-
-.globl _syscall
-_syscall:
+.globl __syscall
+__syscall:
     movq %rdi, %rax
     movq %rsi, %rdi
     movq %rdx, %rsi

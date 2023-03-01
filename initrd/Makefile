@@ -15,7 +15,7 @@ initrd/initrd.img.cpio.gz:
 	$(CQ)gzip -9 -k -f $(LC_INITRD)/initrd.img.cpio
 
 PHONY += initrd_update
-initrd_update: initrd_build_gzip
+initrd_update: snufklib_install sniffit_install initrd_build_gzip
 
 initrd_clean:
 	@if [ !$(SUPPRESS_ECHO) ]; then\

@@ -1,5 +1,9 @@
+
 * improve the build system
   * documentation
   * structure
   * make start directory more generic
     # (currently only calling make from the root project dir is allowed)
+
+Features:
+* working shared libraries

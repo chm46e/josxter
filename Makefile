@@ -6,19 +6,22 @@ SUPPRESS_COMMAND = 1
 
 #CFLAGS = -std=c18 -O2 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing
 #CFLAGS += -Wno-unused-parameter -Wno-pointer-arith
-CFLAGS = -nostdlib -ffreestanding -no-pie -Wall -Wextra -Wpedantic -Wstrict-aliasing
+CFLAGS = -nostdlib -ffreestanding -no-pie -Wall -Wextra -Wpedantic -Wstrict-aliasing -I./
 LDFLAGS :=
+ARFLAGS :=
 MAKEFLAGS := --no-print-directory
 
 CC = gcc
 LD = gcc
+AR = ar
 
 #TODO: LOCATION = $(shell pwd) # below is user specific
 LC = /home/chm46e/ap/josxter
 LC_BIN = $(LC)/bin
 LC_INITRD = $(LC)/initrd
 LC_KERNEL = $(LC)/kernel
-LC_MILKIT = $(LC)/milkit
+LC_SNIFFIT = $(LC)/sniffit
+LC_SNUFKLIB = $(LC)/snufklib
 
 QEMU_PERF_FLAGS = -vga virtio -m 1G
 QEMU_ADD_KERN_FLAGS = loglevel=6
@@ -30,7 +33,8 @@ else
 endif
 
 # All internal projects
-include milkit/Makefile
+include sniffit/Makefile
+include snufklib/Makefile
 
 # Qemu requirements
 include initrd/Makefile
@@ -69,7 +73,7 @@ info:
 	$(CQ)$(CC) -o $@ -c $< $(CFLAGS)
 
 PHONY += clean
-clean: milkit_clean kernel_clean initrd_clean
+clean: sniffit_clean snufklib_clean kernel_clean initrd_clean
 
 PHONY += exec
 exec: kernel_update initrd_update
@@ -79,10 +83,10 @@ exec: kernel_update initrd_update
 	$(CQ)qemu-system-x86_64 -kernel $(LC_KERNEL)/vmlinuz -initrd $(LC_INITRD)/initrd.img.cpio.gz $(QEMU_PERF_FLAGS) --append "root=/dev/ram0 rw $(QEMU_ADD_KERN_FLAGS)"
 
 PHONY += run
-run: milkit_install exec
+run: snufklib_install sniffit_install exec
 
 PHONY += build
-build: milkit_build
+build: snufklib_build sniffit_build
 
 .PHONY: $(PHONY)
 
