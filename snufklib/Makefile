@@ -1,5 +1,7 @@
-snufklib-obj += snufklib/sys.o
-snufklib-sobj += snufklib/sys_s.o
+include snufklib/io/Makefile
+include snufklib/kernel/Makefile
+include snufklib/mem/Makefile
+include snufklib/lib/Makefile
 
 snufklib_build: bin/libsnufk.a
 bin/libsnufk.a: $(snufklib-sobj) $(snufklib-obj)

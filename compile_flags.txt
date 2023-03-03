@@ -1,1 +1,2 @@
 -I./
+-Wno-implicit-function-declaration

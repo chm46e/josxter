@@ -6,7 +6,7 @@ SUPPRESS_COMMAND = 1
 
 #CFLAGS = -std=c18 -O2 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing
 #CFLAGS += -Wno-unused-parameter -Wno-pointer-arith
-CFLAGS = -nostdlib -ffreestanding -no-pie -Wall -Wextra -Wpedantic -Wstrict-aliasing -I./
+CFLAGS = -nostdlib -ffreestanding -no-pie -Wall -Wextra -Wpedantic -Wstrict-aliasing -Wno-implicit-function-declaration -I./ 
 LDFLAGS :=
 ARFLAGS :=
 MAKEFLAGS := --no-print-directory
