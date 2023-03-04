@@ -4,7 +4,11 @@
 
 int main()
 {
-    printf("working!");
+    printf("running..\n");
+    int *ptr = malloc_mmap(100);
+
+    free(ptr);
+
     while (1) {
          
     }

@@ -7,7 +7,6 @@
 #include "sys.h"
 
 #include <syscall.h>
-
 #include <include/stdtype.h>
 
 
@@ -137,6 +136,18 @@ int __sys_execve(const char *filename, const char *const *argv, const char *cons
 void __sys_exit(int error_code)
 {
     __syscall(SYS_exit, (void *)(long)error_code, 0, 0, 0, 0, 0);
+}
+
+/* send signal to process */
+int __sys_kill(pid_t pid, int sig)
+{
+    return __syscall(SYS_kill, (void *)(long)pid, (void *)(long)sig, 0, 0, 0, 0);
+}
+
+/* get process identification */
+pid_t __sys_getpid(void)
+{
+    return __syscall(SYS_getpid, 0, 0, 0, 0, 0, 0);
 }
 
 

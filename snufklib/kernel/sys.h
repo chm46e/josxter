@@ -24,3 +24,5 @@ int __sys_nanosleep(const struct timespec *rqtp, struct timespec *rmtp);
 int __sys_fork(void);
 int __sys_execve(const char *filename, const char *const *argv, const char *const *envp);
 void __sys_exit(int error_code);
+int __sys_kill(pid_t pid, int sig);
+pid_t __sys_getpid(void);

@@ -17,6 +17,7 @@ typedef signed long int int64_t;
 typedef unsigned long int uint64_t;
 
 typedef long int time_t;
+typedef int pid_t;
 
 struct timespec
 {

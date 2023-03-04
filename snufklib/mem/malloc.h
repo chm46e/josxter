@@ -23,5 +23,6 @@
 #define MAP_FILE	0
 #define MAP_ANONYMOUS	0x20		/* Don't use a file.  */
 
-void *malloc(size_t size);
-void free(void *ptr);
+extern void *malloc_mmap(size_t size);
+extern void *malloc(size_t size);
+extern void free(void *ptr);
