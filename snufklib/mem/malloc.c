@@ -72,6 +72,12 @@ extern void *malloc(size_t size)
     return malloc_mmap(size);
 }
 
+
+extern void *calloc(size_t size, size_t num)
+{
+    return malloc(size * num);
+}
+
 /*
  * free implementation:
  *

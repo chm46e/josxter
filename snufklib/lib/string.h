@@ -16,6 +16,7 @@ size_t strspn(const char *stra, const char *strb);
 const char *strstr(const char *stra, const char *strb);
 char *strtok(char *str, const char *delimiters);
 size_t strlen(char *str);
+char *strrev(char *str);
 
 void *memcpy(void *dest, const void *src, size_t num);
 unsigned int memcmp(const void *ptra, const void *ptrb, size_t num);

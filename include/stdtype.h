@@ -50,3 +50,5 @@ struct stat
     struct timespec st_ctim;
 
 };
+
+typedef unsigned int bool;

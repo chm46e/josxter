@@ -1,13 +1,13 @@
 #include <include/stdlib.h>
+#include <include/stddef.h>
 #include <include/stdmem.h>
 #include <include/stdio.h>
 
+static const char *jonksh_argv[] = {"/sbin/jonksh", NULL};
+
 int main()
 {
-    printf("running..\n");
-    int *ptr = malloc_mmap(100);
-
-    free(ptr);
+    exec(jonksh_argv);
 
     while (1) {
          

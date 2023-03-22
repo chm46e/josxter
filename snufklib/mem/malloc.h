@@ -25,4 +25,5 @@
 
 extern void *malloc_mmap(size_t size);
 extern void *malloc(size_t size);
+extern void *calloc(size_t size, size_t num);
 extern void free(void *ptr);

@@ -78,15 +78,17 @@ char *strncat(char *dest, const char *src, size_t num)
  * Compares stra and strb
  * !Difference to standard:
  *   No higher/lower last value compare
- * Returns 0 if same or 1 if different
+ * !Breaking difference to standard:
+ *   Return values are flipped for convenience!
+ * Returns 1 if same or 0 if different
  */
 unsigned int strcmp(const char *stra, const char *strb)
 {
     for (size_t i = 0; stra[i] != '\0' && strb[i] != '\0'; i++) {
         if (stra[i] != strb[i])
-            return 1;
+            return 0;
     }
-    return 0;
+    return 1;
 }
 /*
  * Compares num bytes between stra and strb
@@ -251,6 +253,27 @@ size_t strlen(char *str)
     while(*str++ != '\0')
         len++;
     return len;
+}
+
+/*
+ * Reverse str
+ * Returns reversed str
+ */
+char *strrev(char *str)
+{
+    char rev[strlen(str)+1];
+
+    int start = 0;
+    int end = strlen(str) - 1;
+
+    while (start < end) {
+        rev[start] = str[end];
+        rev[end] = str[start];
+
+        start++;
+        end--;
+    }
+    return rev;
 }
 
 /*

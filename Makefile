@@ -22,6 +22,7 @@ LC_INITRD = $(LC)/initrd
 LC_KERNEL = $(LC)/kernel
 LC_SNIFFIT = $(LC)/sniffit
 LC_SNUFKLIB = $(LC)/snufklib
+LC_JONKSH = $(LC)/jonksh
 
 QEMU_PERF_FLAGS = -vga virtio -m 1G
 QEMU_ADD_KERN_FLAGS = loglevel=6
@@ -35,6 +36,7 @@ endif
 # All internal projects
 include sniffit/Makefile
 include snufklib/Makefile
+include jonksh/Makefile
 
 # Qemu requirements
 include initrd/Makefile
@@ -73,7 +75,7 @@ info:
 	$(CQ)$(CC) -o $@ -c $< $(CFLAGS)
 
 PHONY += clean
-clean: sniffit_clean snufklib_clean kernel_clean initrd_clean
+clean: sniffit_clean snufklib_clean jonksh_clean kernel_clean initrd_clean
 
 PHONY += exec
 exec: kernel_update initrd_update
@@ -83,10 +85,10 @@ exec: kernel_update initrd_update
 	$(CQ)qemu-system-x86_64 -kernel $(LC_KERNEL)/vmlinuz -initrd $(LC_INITRD)/initrd.img.cpio.gz $(QEMU_PERF_FLAGS) --append "root=/dev/ram0 rw $(QEMU_ADD_KERN_FLAGS)"
 
 PHONY += run
-run: snufklib_install sniffit_install exec
+run: clean build snufklib_install sniffit_install jonksh_install exec
 
 PHONY += build
-build: snufklib_build sniffit_build
+build: snufklib_build jonksh_build sniffit_build
 
 .PHONY: $(PHONY)
 

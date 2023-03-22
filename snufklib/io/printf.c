@@ -1,10 +1,18 @@
-#include <include/snufklib/sys.h>
+#include "printf.h"
+
 #include <include/stdio.h>
 #include <include/stdlib.h>
+#include <include/stddef.h>
 
-int printf(const char *format)
+/* works more like c++ std::cout */
+extern int printf(const char *format)
 {
-    int console = __sys_open("/dev/stdout", O_WRONLY | O_NDELAY, 0);
-    __sys_write(console, format, strlen((char *)format));
-    __sys_close(console);
+    FILE console = open("/dev/stdout", O_WRONLY | O_APPEND, 0);
+
+    assert(console != NULL);
+
+    write(console, format, strlen(format));
+    close(console);
+
+    return 0;
 }

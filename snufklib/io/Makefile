@@ -1,2 +1,2 @@
-snufklib-obj += snufklib/io/file.o snufklib/io/printf.o
+snufklib-obj += snufklib/io/printf.o
 
