@@ -44,15 +44,62 @@ static int get_stdin_line(char *input, size_t size)
 
         if (c == '\b') {
             i--;
-            input[i] = 0;
+            input[i] = '\0';
         }
         if (c == '\n') {
-            input[i] = 0;
+            input[i] = '\0';
             return i;
         }
     }
 
     return i;
+}
+
+static void execute()
+{
+    char *token, *cmd[1024];    
+
+    token = strtok(NULL, " ");
+    if (token == NULL)
+        return;
+
+    printf("fexec");
+
+    int i = 0;
+    strcpy(cmd[i], token);
+    while ((token = strtok(NULL, " ")) != NULL) {
+        i++;
+
+        strcpy(cmd[i], token);
+    }
+    cmd[i+1] = "\0";
+
+    exec((const char **)cmd);
+}
+
+static void local_exec()
+{
+
+}
+
+/*
+ * Format of the shell commands:
+ * > [handler] [command]
+ */
+
+static void parse(char *input)
+{
+    char *token;
+
+    token = strtok(input, " ");
+    if (token == NULL)
+        return;
+
+    if (strcmp(token, "x")) {
+        execute();
+    } else if (strcmp(token, "@")) {
+        local_exec();
+    }
 }
 
 static void loop(void)
@@ -63,7 +110,7 @@ static void loop(void)
         printf("> ");
         get_stdin_line(input, 1024);
 
-        //execute(input);
+        parse(input);
     }
 }
 
